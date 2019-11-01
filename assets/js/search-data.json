@@ -3,151 +3,151 @@
   "0": {
     "title": "",
     "content": "404 . Page not found :( . The requested page could not be found. .",
-    "url": "/404.html",
+    "url": "http://kevinremhof.com/404.html",
     "relUrl": "/404.html"
   }
   ,"1": {
     "title": "Setup Project",
     "content": "Now that you’ve downloaded the Async template, you can set up your Visual Studio Project. . Launch Visual Studio and create a new project by clicking “Create a new project”. . . Choose the “CAP Async Workflow Trigger” template. You may need to search for CAP. . Choose a “Project name”, “Location”, and “Solution name” for your new project and click “Create”. .",
-    "url": "/firstapp/VSsetup.html",
+    "url": "http://kevinremhof.com/firstapp/VSsetup.html",
     "relUrl": "/firstapp/VSsetup.html"
   }
   ,"2": {
     "title": "App Pipelines",
     "content": "The app development cycle includes 2 separate pipelines for managing and ensuring only quality apps make it to the global library. The first of these is the build pipeline and the second is the release pipeline. .",
-    "url": "/gettingstarted/app-pipelines.html",
+    "url": "http://kevinremhof.com/gettingstarted/app-pipelines.html",
     "relUrl": "/gettingstarted/app-pipelines.html"
   }
   ,"3": {
     "title": "App Development Cycle",
     "content": "There are 5 steps in the cycle to develop and release a CAP app. Deployments into both the platform testing environment and the CAP library for release are controlled by a DevOps pipeline that also manages approvals as well as important code and compliance checks. . . The App DevKit provides templates, libraries and documentation to help developers follow this process and create new Apps with minimal effort. .",
-    "url": "/gettingstarted/appdevcycle.html",
+    "url": "http://kevinremhof.com/gettingstarted/appdevcycle.html",
     "relUrl": "/gettingstarted/appdevcycle.html"
   }
   ,"4": {
     "title": "App Lifecycle",
     "content": "The entire lifecycle of an app begins when product owners define features that become apps. As the app is utilized and monitored for optimization in the business process, feedback to the product owners becomes new features and user stories reviewed by the architectural team assigned to the app development team and so the cycle continues. . .",
-    "url": "/gettingstarted/applifecycle.html",
+    "url": "http://kevinremhof.com/gettingstarted/applifecycle.html",
     "relUrl": "/gettingstarted/applifecycle.html"
   }
   ,"5": {
     "title": "Async",
     "content": "The Async Workflow Trigger template does not provide any REST controllers by default since it is only required to process work items sent asynchronously from queue storage messaging. Instead, a background worker class subscribes to the messages belonging to the app. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the BackgroundWorker when receiving a message for processing an item. That method should call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. Because queue storage handles the eventual delivery of messages even during the scaling up the number of app instances to service the load, the time required to process the request is not as important. .",
-    "url": "/templates/async.html",
+    "url": "http://kevinremhof.com/templates/async.html",
     "relUrl": "/templates/async.html"
   }
   ,"6": {
     "title": "Azure DevOps",
     "content": "The backlog for apps is managed under a feature with user stories in the CAP Azure DevOps tool. This is both the beginning of the app lifecycle and the place to enhance the app through feedback. All development work must follow the guidelines for managing and working out of this backlog. .",
-    "url": "/gettingstarted/azuredevops.html",
+    "url": "http://kevinremhof.com/gettingstarted/azuredevops.html",
     "relUrl": "/gettingstarted/azuredevops.html"
   }
   ,"7": {
     "title": "Sync",
     "content": "The build pipeline generates containerized images and artifacts suitable for integration testing as well as scale and load tests in a common testing environment. Source code and builds for apps are managed through Azure DevOps. The pipeline performs security checks, code coverage checks, unit test execution, and service container image builds before publishing to the release pipeline. .",
-    "url": "/gettingstarted/build-pipeline.html",
+    "url": "http://kevinremhof.com/gettingstarted/build-pipeline.html",
     "relUrl": "/gettingstarted/build-pipeline.html"
   }
   ,"8": {
     "title": "Business Process Deployments",
     "content": "Apps are deployed to customer environments from the app library based on inclusion in the business process configuration. This means that only apps that are configured in the business process flow exist in the customer environment. .",
-    "url": "/gettingstarted/busprocessdep.html",
+    "url": "http://kevinremhof.com/gettingstarted/busprocessdep.html",
     "relUrl": "/gettingstarted/busprocessdep.html"
   }
   ,"9": {
     "title": "CAP App Development Kit",
     "content": "This development cycle is facilitated by a CAP App Development Kit that will provide the following: . Design Document template – a design document should be provided to the CAP App Management team | App Development Manual – this same document describing how to develop an app | Visual Studio templates – templates providing a basic .NET Core project for the various types of app services | Platform Service libraries – C# libraries facilitating calls to common services like RBAC, File Storage, Data Storage, Item Queues, Logging, etc. | Test Harness – a tool providing mock services and features for standalone testing | Integration Test Report template – a standard report on the procedures and results of integration testing should be provided to the CAP App Management team | User Documentation Guidance template – a document with details for user interaction with the app should be provided to the technical writers of the CAP user documentation |",
-    "url": "/gettingstarted/cap-adk.html",
+    "url": "http://kevinremhof.com/gettingstarted/cap-adk.html",
     "relUrl": "/gettingstarted/cap-adk.html"
   }
   ,"10": {
     "title": "Configure External API",
     "content": "In this step, we will setup an external (third-party) API so the App can do something. .",
-    "url": "/firstapp/config-external.html",
+    "url": "http://kevinremhof.com/firstapp/config-external.html",
     "relUrl": "/firstapp/config-external.html"
   }
   ,"11": {
     "title": "Cron",
     "content": "The Cron Job template creates a solution for an app that can be kicked off according to a cron schedule with the restriction that only one instance is ever active at a time. This template uses a background worker that terminates after it executes. The developer adds the implementation to the PerformServiceAsync method of the app’s main service class to perform some check or create an item in the workflow. The actual item creation happens within this method by calling the CreateWorkItemAsync method in the app integration library class. However, this template may be used for cron based supporting services as well that do not create items. .",
-    "url": "/templates/cron.html",
+    "url": "http://kevinremhof.com/templates/cron.html",
     "relUrl": "/templates/cron.html"
   }
   ,"12": {
     "title": "Download Template",
     "content": "Start by downloading the Async template from the CAP Artifcats. . Open up the CAP App Template and Tools Artifcats. . . Open the async-app-csharp-template . . Copy the command to use with the Azure CLI and run it from a command line . . . Install the downloaded VSIX file . . .",
-    "url": "/firstapp/downloadasync.html",
+    "url": "http://kevinremhof.com/firstapp/downloadasync.html",
     "relUrl": "/firstapp/downloadasync.html"
   }
   ,"13": {
     "title": "Getting Started",
     "content": "The first step for creating a CAP app is receiving business requirements that have been approved by the CAP App Management team to make sure that the proposed functionality does not already exist or should be added to an existing app. Design and development actually begins by following this document and other resources provided in the App Development Kit. .",
-    "url": "/gettingstarted/",
+    "url": "http://kevinremhof.com/gettingstarted/",
     "relUrl": "/gettingstarted/"
   }
   ,"14": {
     "title": "Templates",
     "content": ".",
-    "url": "/templates/",
+    "url": "http://kevinremhof.com/templates/",
     "relUrl": "/templates/"
   }
   ,"15": {
     "title": "Your First App",
     "content": "Let’s do this! .",
-    "url": "/firstapp/",
+    "url": "http://kevinremhof.com/firstapp/",
     "relUrl": "/firstapp/"
   }
   ,"16": {
     "title": "",
     "content": "Welcome to the CAP DevZone. .",
-    "url": "/",
+    "url": "http://kevinremhof.com/",
     "relUrl": "/"
   }
   ,"17": {
     "title": "Initiation",
     "content": "The Initiation Event template provides a controller for receiving metadata through an HTTP POST request to create a new item in the workflow. The developer adds the implementation to the CreateWorkItemAsync method of the app’s main service class to create an item in the workflow. The actual creation happens within this method by calling the method with the same name in the workflow library class. The developer will likely use the data transfer object received in the POST request to populate custom metadata in the work item object passed into the workflow library. .",
-    "url": "/templates/initiation.html",
+    "url": "http://kevinremhof.com/templates/initiation.html",
     "relUrl": "/templates/initiation.html"
   }
   ,"18": {
     "title": "Build your logic",
     "content": "Now let’s write some logic for your App. .",
-    "url": "/firstapp/logic.html",
+    "url": "http://kevinremhof.com/firstapp/logic.html",
     "relUrl": "/firstapp/logic.html"
   }
   ,"19": {
     "title": "Build the manifest.json",
     "content": "Now we build the manifest using the Manifest Builder Tool. .",
-    "url": "/firstapp/manifest.html",
+    "url": "http://kevinremhof.com/firstapp/manifest.html",
     "relUrl": "/firstapp/manifest.html"
   }
   ,"20": {
     "title": "Monitoring",
     "content": "Each app should provide sufficient telemetry to provide insight into performance. This information can then be used as feedback in optimizing the app or the business process. A library for logging found in the development kit takes care of submitting this information for display in dashboards and reports. .",
-    "url": "/gettingstarted/monitoring.html",
+    "url": "http://kevinremhof.com/gettingstarted/monitoring.html",
     "relUrl": "/gettingstarted/monitoring.html"
   }
   ,"21": {
     "title": "Release Pipeline",
     "content": "The release pipeline guarantees that the app has gone through load, scale, and integration tests before being approved and released to the global library. Once an app is in the global library, it is available for any CAP business process in the platform including production. .",
-    "url": "/gettingstarted/release-pipeline.html",
+    "url": "http://kevinremhof.com/gettingstarted/release-pipeline.html",
     "relUrl": "/gettingstarted/release-pipeline.html"
   }
   ,"22": {
     "title": "Review and Approval",
     "content": "The CAP App Management team is responsible for reviewing apps to be included in the global library will require the following documents as a part of that process: . Design Document | Integration Test Report | User Documentation Guidance These provide evidence that the app follows architectural, security, and QA guidelines. The board will use them in making a determination as to whether or not the app can be included in the global library. |",
-    "url": "/gettingstarted/review-approval.html",
+    "url": "http://kevinremhof.com/gettingstarted/review-approval.html",
     "relUrl": "/gettingstarted/review-approval.html"
   }
   ,"23": {
     "title": "Sync",
     "content": "The Sync Workflow Trigger template includes Swagger for development deployments and health check endpoints by default. It also provides a controller for processing the synchronous HTTP PUT requests from the workflow service. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the controller, for processing an item. If the work item processing is completed within milliseconds, that method should immediately call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. However, apps that simply put the item in their own queue for deferred or manual processing should not call this method until the item is actually processed. In this case, remove that line of code from the template and provide the invocation in another event corresponding to when it is eventually removed from the app’s internal queue. Please, observe all idempotent principles in completing queued items. .",
-    "url": "/templates/sync.html",
+    "url": "http://kevinremhof.com/templates/sync.html",
     "relUrl": "/templates/sync.html"
   }
   ,"24": {
     "title": "Test Locally",
     "content": "Let’s test. .",
-    "url": "/firstapp/test.html",
+    "url": "http://kevinremhof.com/firstapp/test.html",
     "relUrl": "/firstapp/test.html"
   }
   
