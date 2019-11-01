@@ -74,7 +74,7 @@
   }
   ,"12": {
     "title": "Download Template",
-    "content": "Start by downloading the Async template from the CAP Artifcats. . Open up the CAP App Template and Tools Artifcats. . . Open the async-app-csharp-template . . Copy the command to use with the Azure CLI and run it from a command line . . . Install the downloaded VSIX file . .",
+    "content": "Start by downloading the Async template from the CAP Artifcats. . Open up the CAP App Template and Tools Artifcats. . . Open the async-app-csharp-template . . Copy the command to use with the Azure CLI and run it from a command line . . . Install the downloaded VSIX file . . .",
     "url": "/firstapp/downloadasync.html",
     "relUrl": "/firstapp/downloadasync.html"
   }
@@ -92,7 +92,7 @@
   }
   ,"15": {
     "title": "Your First App",
-    "content": ".",
+    "content": "Let’s do this! .",
     "url": "/firstapp/",
     "relUrl": "/firstapp/"
   }
