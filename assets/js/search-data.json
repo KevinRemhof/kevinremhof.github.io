@@ -1,0 +1,88 @@
+{
+  
+  "0": {
+    "title": "",
+    "content": "404 . Page not found :( . The requested page could not be found. .",
+    "url": "http://localhost:4000/404.html",
+    "relUrl": "/404.html"
+  }
+  ,"1": {
+    "title": "Setup Project",
+    "content": "Now that you’ve downloaded the Async template, you can set up your Visual Studio Project. . Launch Visual Studio and create a new project by clicking “Create a new project”. . . Choose the “CAP Async Workflow Trigger” template. You may need to search for CAP. . Choose a “Project name”, “Location”, and “Solution name” for your new project and click “Create”. .",
+    "url": "http://localhost:4000/firstapp/VSsetup.html",
+    "relUrl": "/firstapp/VSsetup.html"
+  }
+  ,"2": {
+    "title": "Async",
+    "content": "Below is a pretty example of some code . var s = &quot;JavaScript syntax highlighting&quot;; alert(s); . s = &quot;Python syntax highlighting&quot; print s . No language indicated, so no syntax highlighting. But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;. . . . This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
+    "url": "http://localhost:4000/templates/async.html",
+    "relUrl": "/templates/async.html"
+  }
+  ,"3": {
+    "title": "Configure External API",
+    "content": "In this step, we will setup an external (third-party) API so the App can do something. .",
+    "url": "http://localhost:4000/firstapp/config-external.html",
+    "relUrl": "/firstapp/config-external.html"
+  }
+  ,"4": {
+    "title": "Cron",
+    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
+    "url": "http://localhost:4000/templates/cron.html",
+    "relUrl": "/templates/cron.html"
+  }
+  ,"5": {
+    "title": "Download Template",
+    "content": "Start by downloading the Async template from the CAP Artifcats. . Open up the CAP App Template and Tools Artifcats. . . Open the async-app-csharp-template . . Copy the command to use with the Azure CLI and run it from a command line . . . Install the downloaded VSIX file . .",
+    "url": "http://localhost:4000/firstapp/downloadasync.html",
+    "relUrl": "/firstapp/downloadasync.html"
+  }
+  ,"6": {
+    "title": "Your First App",
+    "content": ".",
+    "url": "http://localhost:4000/firstapp/",
+    "relUrl": "/firstapp/"
+  }
+  ,"7": {
+    "title": "",
+    "content": "Welcome to the CAP DevZone. .",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  }
+  ,"8": {
+    "title": "Templates",
+    "content": ".",
+    "url": "http://localhost:4000/templates/",
+    "relUrl": "/templates/"
+  }
+  ,"9": {
+    "title": "Initiation",
+    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
+    "url": "http://localhost:4000/templates/initiation.html",
+    "relUrl": "/templates/initiation.html"
+  }
+  ,"10": {
+    "title": "Build your logic",
+    "content": "Now let’s write some logic for your App. .",
+    "url": "http://localhost:4000/firstapp/logic.html",
+    "relUrl": "/firstapp/logic.html"
+  }
+  ,"11": {
+    "title": "Build the manifest.json",
+    "content": "Now we build the manifest using the Manifest Builder Tool. .",
+    "url": "http://localhost:4000/firstapp/manifest.html",
+    "relUrl": "/firstapp/manifest.html"
+  }
+  ,"12": {
+    "title": "Sync",
+    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
+    "url": "http://localhost:4000/templates/sync.html",
+    "relUrl": "/templates/sync.html"
+  }
+  ,"13": {
+    "title": "Test Locally",
+    "content": "Let’s test. .",
+    "url": "http://localhost:4000/firstapp/test.html",
+    "relUrl": "/firstapp/test.html"
+  }
+  
+}
