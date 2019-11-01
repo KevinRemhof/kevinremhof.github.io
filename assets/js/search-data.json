@@ -13,72 +13,138 @@
     "relUrl": "/firstapp/VSsetup.html"
   }
   ,"2": {
+    "title": "App Pipelines",
+    "content": "The Sync Workflow Trigger template includes Swagger for development deployments and health check endpoints by default. It also provides a controller for processing the synchronous HTTP PUT requests from the workflow service. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the controller, for processing an item. If the work item processing is completed within milliseconds, that method should immediately call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. However, apps that simply put the item in their own queue for deferred or manual processing should not call this method until the item is actually processed. In this case, remove that line of code from the template and provide the invocation in another event corresponding to when it is eventually removed from the app’s internal queue. Please, observe all idempotent principles in completing queued items. .",
+    "url": "/gettingstarted/app-pipelines.html",
+    "relUrl": "/gettingstarted/app-pipelines.html"
+  }
+  ,"3": {
+    "title": "App Development Cycle",
+    "content": "The Async Workflow Trigger template does not provide any REST controllers by default since it is only required to process work items sent asynchronously from queue storage messaging. Instead, a background worker class subscribes to the messages belonging to the app. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the BackgroundWorker when receiving a message for processing an item. That method should call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. Because queue storage handles the eventual delivery of messages even during the scaling up the number of app instances to service the load, the time required to process the request is not as important. .",
+    "url": "/gettingstarted/appdevcycle.html",
+    "relUrl": "/gettingstarted/appdevcycle.html"
+  }
+  ,"4": {
+    "title": "App Lifecycle",
+    "content": "The Cron Job template creates a solution for an app that can be kicked off according to a cron schedule with the restriction that only one instance is ever active at a time. This template uses a background worker that terminates after it executes. The developer adds the implementation to the PerformServiceAsync method of the app’s main service class to perform some check or create an item in the workflow. The actual item creation happens within this method by calling the CreateWorkItemAsync method in the app integration library class. However, this template may be used for cron based supporting services as well that do not create items. .",
+    "url": "/gettingstarted/applifecycle.html",
+    "relUrl": "/gettingstarted/applifecycle.html"
+  }
+  ,"5": {
     "title": "Async",
-    "content": "Below is a pretty example of some code . var s = &quot;JavaScript syntax highlighting&quot;; alert(s); . s = &quot;Python syntax highlighting&quot; print s . No language indicated, so no syntax highlighting. But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;. . . . This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
+    "content": "The Async Workflow Trigger template does not provide any REST controllers by default since it is only required to process work items sent asynchronously from queue storage messaging. Instead, a background worker class subscribes to the messages belonging to the app. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the BackgroundWorker when receiving a message for processing an item. That method should call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. Because queue storage handles the eventual delivery of messages even during the scaling up the number of app instances to service the load, the time required to process the request is not as important. .",
     "url": "/templates/async.html",
     "relUrl": "/templates/async.html"
   }
-  ,"3": {
+  ,"6": {
+    "title": "Azure DevOps",
+    "content": "The Initiation Event template provides a controller for receiving metadata through an HTTP POST request to create a new item in the workflow. The developer adds the implementation to the CreateWorkItemAsync method of the app’s main service class to create an item in the workflow. The actual creation happens within this method by calling the method with the same name in the workflow library class. The developer will likely use the data transfer object received in the POST request to populate custom metadata in the work item object passed into the workflow library. .",
+    "url": "/gettingstarted/azuredevops.html",
+    "relUrl": "/gettingstarted/azuredevops.html"
+  }
+  ,"7": {
+    "title": "Sync",
+    "content": "The Sync Workflow Trigger template includes Swagger for development deployments and health check endpoints by default. It also provides a controller for processing the synchronous HTTP PUT requests from the workflow service. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the controller, for processing an item. If the work item processing is completed within milliseconds, that method should immediately call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. However, apps that simply put the item in their own queue for deferred or manual processing should not call this method until the item is actually processed. In this case, remove that line of code from the template and provide the invocation in another event corresponding to when it is eventually removed from the app’s internal queue. Please, observe all idempotent principles in completing queued items. .",
+    "url": "/gettingstarted/build-pipeline.html",
+    "relUrl": "/gettingstarted/build-pipeline.html"
+  }
+  ,"8": {
+    "title": "Business Process Deployments",
+    "content": "The Sync Workflow Trigger template includes Swagger for development deployments and health check endpoints by default. It also provides a controller for processing the synchronous HTTP PUT requests from the workflow service. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the controller, for processing an item. If the work item processing is completed within milliseconds, that method should immediately call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. However, apps that simply put the item in their own queue for deferred or manual processing should not call this method until the item is actually processed. In this case, remove that line of code from the template and provide the invocation in another event corresponding to when it is eventually removed from the app’s internal queue. Please, observe all idempotent principles in completing queued items. .",
+    "url": "/gettingstarted/busprocessdep.html",
+    "relUrl": "/gettingstarted/busprocessdep.html"
+  }
+  ,"9": {
+    "title": "CAP App Development Kit",
+    "content": "The Sync Workflow Trigger template includes Swagger for development deployments and health check endpoints by default. It also provides a controller for processing the synchronous HTTP PUT requests from the workflow service. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the controller, for processing an item. If the work item processing is completed within milliseconds, that method should immediately call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. However, apps that simply put the item in their own queue for deferred or manual processing should not call this method until the item is actually processed. In this case, remove that line of code from the template and provide the invocation in another event corresponding to when it is eventually removed from the app’s internal queue. Please, observe all idempotent principles in completing queued items. .",
+    "url": "/gettingstarted/cap-adk.html",
+    "relUrl": "/gettingstarted/cap-adk.html"
+  }
+  ,"10": {
     "title": "Configure External API",
     "content": "In this step, we will setup an external (third-party) API so the App can do something. .",
     "url": "/firstapp/config-external.html",
     "relUrl": "/firstapp/config-external.html"
   }
-  ,"4": {
+  ,"11": {
     "title": "Cron",
-    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
+    "content": "The Cron Job template creates a solution for an app that can be kicked off according to a cron schedule with the restriction that only one instance is ever active at a time. This template uses a background worker that terminates after it executes. The developer adds the implementation to the PerformServiceAsync method of the app’s main service class to perform some check or create an item in the workflow. The actual item creation happens within this method by calling the CreateWorkItemAsync method in the app integration library class. However, this template may be used for cron based supporting services as well that do not create items. .",
     "url": "/templates/cron.html",
     "relUrl": "/templates/cron.html"
   }
-  ,"5": {
+  ,"12": {
     "title": "Download Template",
     "content": "Start by downloading the Async template from the CAP Artifcats. . Open up the CAP App Template and Tools Artifcats. . . Open the async-app-csharp-template . . Copy the command to use with the Azure CLI and run it from a command line . . . Install the downloaded VSIX file . .",
     "url": "/firstapp/downloadasync.html",
     "relUrl": "/firstapp/downloadasync.html"
   }
-  ,"6": {
-    "title": "Your First App",
-    "content": ".",
-    "url": "/firstapp/",
-    "relUrl": "/firstapp/"
+  ,"13": {
+    "title": "Getting Started",
+    "content": "",
+    "url": "/gettingstarted/",
+    "relUrl": "/gettingstarted/"
   }
-  ,"7": {
-    "title": "",
-    "content": "Welcome to the CAP DevZone. .",
-    "url": "/",
-    "relUrl": "/"
-  }
-  ,"8": {
+  ,"14": {
     "title": "Templates",
     "content": ".",
     "url": "/templates/",
     "relUrl": "/templates/"
   }
-  ,"9": {
+  ,"15": {
+    "title": "Your First App",
+    "content": ".",
+    "url": "/firstapp/",
+    "relUrl": "/firstapp/"
+  }
+  ,"16": {
+    "title": "",
+    "content": "Welcome to the CAP DevZone. .",
+    "url": "/",
+    "relUrl": "/"
+  }
+  ,"17": {
     "title": "Initiation",
-    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
+    "content": "The Initiation Event template provides a controller for receiving metadata through an HTTP POST request to create a new item in the workflow. The developer adds the implementation to the CreateWorkItemAsync method of the app’s main service class to create an item in the workflow. The actual creation happens within this method by calling the method with the same name in the workflow library class. The developer will likely use the data transfer object received in the POST request to populate custom metadata in the work item object passed into the workflow library. .",
     "url": "/templates/initiation.html",
     "relUrl": "/templates/initiation.html"
   }
-  ,"10": {
+  ,"18": {
     "title": "Build your logic",
     "content": "Now let’s write some logic for your App. .",
     "url": "/firstapp/logic.html",
     "relUrl": "/firstapp/logic.html"
   }
-  ,"11": {
+  ,"19": {
     "title": "Build the manifest.json",
     "content": "Now we build the manifest using the Manifest Builder Tool. .",
     "url": "/firstapp/manifest.html",
     "relUrl": "/firstapp/manifest.html"
   }
-  ,"12": {
+  ,"20": {
+    "title": "Monitoring",
+    "content": "The Sync Workflow Trigger template includes Swagger for development deployments and health check endpoints by default. It also provides a controller for processing the synchronous HTTP PUT requests from the workflow service. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the controller, for processing an item. If the work item processing is completed within milliseconds, that method should immediately call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. However, apps that simply put the item in their own queue for deferred or manual processing should not call this method until the item is actually processed. In this case, remove that line of code from the template and provide the invocation in another event corresponding to when it is eventually removed from the app’s internal queue. Please, observe all idempotent principles in completing queued items. .",
+    "url": "/gettingstarted/monitoring.html",
+    "relUrl": "/gettingstarted/monitoring.html"
+  }
+  ,"21": {
+    "title": "Release Pipeline",
+    "content": "The Sync Workflow Trigger template includes Swagger for development deployments and health check endpoints by default. It also provides a controller for processing the synchronous HTTP PUT requests from the workflow service. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the controller, for processing an item. If the work item processing is completed within milliseconds, that method should immediately call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. However, apps that simply put the item in their own queue for deferred or manual processing should not call this method until the item is actually processed. In this case, remove that line of code from the template and provide the invocation in another event corresponding to when it is eventually removed from the app’s internal queue. Please, observe all idempotent principles in completing queued items. .",
+    "url": "/gettingstarted/release-pipeline.html",
+    "relUrl": "/gettingstarted/release-pipeline.html"
+  }
+  ,"22": {
+    "title": "Review and Approval",
+    "content": "The Sync Workflow Trigger template includes Swagger for development deployments and health check endpoints by default. It also provides a controller for processing the synchronous HTTP PUT requests from the workflow service. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the controller, for processing an item. If the work item processing is completed within milliseconds, that method should immediately call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. However, apps that simply put the item in their own queue for deferred or manual processing should not call this method until the item is actually processed. In this case, remove that line of code from the template and provide the invocation in another event corresponding to when it is eventually removed from the app’s internal queue. Please, observe all idempotent principles in completing queued items. .",
+    "url": "/gettingstarted/review-approval.html",
+    "relUrl": "/gettingstarted/review-approval.html"
+  }
+  ,"23": {
     "title": "Sync",
-    "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
+    "content": "The Sync Workflow Trigger template includes Swagger for development deployments and health check endpoints by default. It also provides a controller for processing the synchronous HTTP PUT requests from the workflow service. The developer only needs to add the implementation to the ProcessWorkItem method of the app’s ProcessWork service class, which is invoked from the controller, for processing an item. If the work item processing is completed within milliseconds, that method should immediately call the UpdateWorkItemAsync method of the app integration library to signal the workflow service that the item’s processing for that step is complete. However, apps that simply put the item in their own queue for deferred or manual processing should not call this method until the item is actually processed. In this case, remove that line of code from the template and provide the invocation in another event corresponding to when it is eventually removed from the app’s internal queue. Please, observe all idempotent principles in completing queued items. .",
     "url": "/templates/sync.html",
     "relUrl": "/templates/sync.html"
   }
-  ,"13": {
+  ,"24": {
     "title": "Test Locally",
     "content": "Let’s test. .",
     "url": "/firstapp/test.html",
