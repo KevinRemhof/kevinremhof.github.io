@@ -1,12 +1,49 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Kevin's Page</title>
-</head>
-<body>
-    <h1>Welcome to Kevin's Page!</h1>
-	<p>
-	The link below will pull back your stats from Strava using an AWS Lambda.
-	<a href="https://www.strava.com/oauth/authorize?client_id=21697&redirect_uri=https%3A%2F%2F0srm94upp1.execute-api.us-east-1.amazonaws.com%2Fdefault%2FstravaRecents&approval_prompt=auto&response_type=code&scope=read%2Cactivity%3Aread">Get your stats</a>
-	</p>
-</body>
+	<head>
+		<style>
+		#customers {
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+		}
+
+		h1 {
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		}
+
+		h2 {
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		}
+
+		p {
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		}
+
+		#customers td, #customers th {
+		border: 1px solid #ddd;
+		padding: 8px;
+		}
+
+		#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+		#customers tr:hover {background-color: #ddd;}
+
+		#customers th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: left;
+		background-color: #fc4c02;
+		color: white;
+		}
+		</style>
+	</head>
+
+	<body>
+		<h1>Welcome to Kevin's Page!</h1>
+		<p>
+		The link below will pull back your stats from Strava using an AWS Lambda.
+		<a href="https://www.strava.com/oauth/authorize?client_id=21697&redirect_uri=https%3A%2F%2F0srm94upp1.execute-api.us-east-1.amazonaws.com%2Fdefault%2FstravaRecents&approval_prompt=auto&response_type=code&scope=read%2Cactivity%3Aread">Get your stats</a>
+		</p>
+	</body>
 </html>
