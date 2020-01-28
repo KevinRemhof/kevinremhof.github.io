@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<style>
-		#customers {
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		border-collapse: collapse;
-		width: 100%;
-		}
+<html lang="en">
 
-		h1 {
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		}
+<head>
+    <meta charset="utf-8">
+    <title>Killer B's Recent Strava Stats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-		h2 {
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		}
+</head>
 
-		p {
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		}
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="images\KillerBs.svg" height="50" alt="" class="d-inline-block align-middle mr-2">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-log-in"></span>
+                        <img src="images\1.2 strava api logos\powered by Strava\pwrdBy_strava_light\api_logo_pwrdBy_strava_stack_light.svg"
+                            height="50" alt="" class="d-inline-block align-middle mr-2">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <div class="container">
+        <div class="well" id="connectWithApi">
+            <p style="font-size: 1.5em;line-height: normal;">Connect with Strava to show your recent rides. This will
+                pull back the last 7, 30, and 90 days of activities.</p>
+            <a style="margin-left: auto;margin-right:auto"
+                href="https://www.strava.com/oauth/authorize?client_id=21697&redirect_uri=https%3A%2F%2Fj77ctmg45d.execute-api.us-east-1.amazonaws.com%2Fdefault%2FstravaRecentsThree&approval_prompt=auto&response_type=code&scope=read%2Cactivity%3Aread"><img
+                    style="width:193px"
+                    src="images\connect\btn_strava_connectwith_orange\btn_strava_connectwith_orange.svg"></a>
+        </div>
+    </div>
+</body>
+</div>
 
-		#customers td, #customers th {
-		border: 1px solid #ddd;
-		padding: 8px;
-		}
-
-		#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-		#customers tr:hover {background-color: #ddd;}
-
-		#customers th {
-		padding-top: 12px;
-		padding-bottom: 12px;
-		text-align: left;
-		background-color: #fc4c02;
-		color: white;
-		}
-		</style>
-	</head>
-
-	<body>
-		<h1>Welcome to Kevin's Page!</h1>
-		<p>
-		The links below will pull back your stats from Strava using an AWS Lambda.<br /><br />
-		<a href="https://www.strava.com/oauth/authorize?client_id=21697&redirect_uri=https%3A%2F%2Fj77ctmg45d.execute-api.us-east-1.amazonaws.com%2Fdefault%2FstravaRecentsThree&approval_prompt=auto&response_type=code&scope=read%2Cactivity%3Aread">Get your stats for the past 7/30/90 days</a><br /><br />
-		<a href="https://www.strava.com/oauth/authorize?client_id=21697&redirect_uri=https%3A%2F%2F0srm94upp1.execute-api.us-east-1.amazonaws.com%2Fdefault%2FstravaRecents&approval_prompt=auto&response_type=code&scope=read%2Cactivity%3Aread">Get your stats for the past year (this one is slow)</a>
-		</p>
-	</body>
 </html>
